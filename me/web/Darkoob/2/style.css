@@ -1,0 +1,63 @@
+:root {
+	direction: rtl;
+}
+
+table {
+	border: 5px solid red;
+	border-collapse: collapse;
+	width: 50%;
+	text-align: center;
+	margin-right: 25%;
+	margin-top: 10rem;
+}
+
+th {
+	border: 3px solid red;
+}
+
+td {
+	border: 1px solid red;
+}
+
+div {
+	text-align: center;
+}
+
+#div1 {
+	background: lightblue;
+	color: white;
+	border: 1px solid black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#div2 {
+	background: black;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#div3 {
+	background: lightgreen;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 64%;
+	float: right;
+}
+
+#div4 {
+	background: gray;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 34%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#div5 {
+	background: red;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	clear: both;
+}

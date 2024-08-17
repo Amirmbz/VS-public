@@ -1,0 +1,17 @@
+body{
+	direction:rtl;	
+}
+
+form{
+	background-color: gray;
+	padding: 15px;
+	float:right;
+}
+
+input[type="text"], input[type="password"]{
+	border-radius: 10px;
+}
+
+#last{
+	text-align: center
+}
