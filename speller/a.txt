@@ -1,0 +1,87 @@
+for (node n = &table[hash(word)]; node != NULL; n = n->next)
+{
+    if (strcasecmp(n->word,word))
+    {
+        return true;
+    }
+}
+return false;
+
+
+
+
+(int)pow(26, average)
+
+
+    int place = 0;
+    for (int i = 0; i < average; i++)
+    {
+        if (word[i] == '\0')
+        {
+            break;
+        }
+        place += (toupper(word[0]) - 'A') * (int) pow(N, (average - i) - 1);
+    }
+
+
+
+
+    int a = 0;
+    for (int i = 0; i < 3; i++)
+    {
+        a += (toupper(word[i]) - 'A') * pow(26, 2 - i);
+    }
+
+
+
+
+
+        for (node *ptr = table[i], *next = NULL; ptr != NULL; ptr = next->next)
+        {
+            next = ptr->next;
+            free(ptr);
+        }
+
+
+
+
+
+
+            if (index > LENGTH)
+            {
+                // Consume remainder of alphabetical string
+                while (fread(&c, sizeof(char), 1, file) && isalpha(c));
+
+                // Prepare for new word
+                index = 0;
+            }
+        }
+
+        // Ignore words with numbers (like MS Word can)
+        else if (isdigit(c))
+        {
+            // Consume remainder of alphanumeric string
+            while (fread(&c, sizeof(char), 1, file) && isalnum(c));
+
+            // Prepare for new word
+            index = 0;
+        }
+
+        // We must have found a whole word
+        else if (index > 0)
+        {
+            // Terminate current word
+            word[index] = '\0';
+
+            // Update counter
+            words++;
+
+            // Check word's spelling
+            getrusage(RUSAGE_SELF, &before);
+            bool misspelled = !check(word);
+            getrusage(RUSAGE_SELF, &after);
+
+            // Update benchmark
+            time_check += calculate(&before, &after);
+
+        }
