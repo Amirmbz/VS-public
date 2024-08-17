@@ -1,0 +1,5 @@
+The average energy, valence, and danceability of the listener's top 100 songs are respectively: 0.65906, 0.484443, 0.71646
+In regard to characterizing the listener's taste, I could say that the listener enjoys high-energy and danceable songs.
+But if we look at the other factors in the database we notice that the average speechiness is about 0.115, and the average tempo is 120, which is considerably high.
+Hence, we can judge other characteristics of the listeners by looking at all the factors in the database.
+I also assumed that it could be helpful to visualize the top songs but in this case, it didn't vary enough to do that.
