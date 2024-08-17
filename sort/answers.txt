@@ -1,0 +1,12 @@
+sort1 uses: bubble sort
+
+How do you know?: run time for reversed50000: 6.515s; run time for sorted50000: 2.354s
+the program was fast with sorted argumens but reletively slow with revesed
+sort2 uses: merge sort
+
+How do you know?: run time for reversed50000: 1.864s; run time for sorted50000: 2.229s
+the program was fast eather way
+sort3 uses: selection sort
+
+How do you know?: run time for reversed50000: 4.627s; run time for sorted50000: 3.992s
+the program was slow eather way
