@@ -1,0 +1,367 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: #BF471B;
+    text-decoration: underline;
+}
+
+.menuSection a:hover {
+    color: #F2C894;
+    text-decoration: underline;
+}
+
+a.reserve-now:hover {
+    color: #402D22;
+    text-decoration: underline; 
+}
+
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: #F2C894;
+}
+
+
+.btn {
+    padding: 15px 32px;
+    background: #BF471B;
+    border-radius: 16px;
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.dark {
+    background: #BF471B;
+}
+
+.btn.light {
+    background: #402D22;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(180deg, #F2A74B 0%, #F2C894 100%);
+    height: 100vh;
+    width: 100%;
+
+}
+
+.navIcon{
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 35px;
+    z-index: 16;
+    transition: all 400ms ease;
+}
+
+nav.scrolled {
+    background-color: #F2A74B;
+    box-shadow: 0 16px 14px -8px rgb(0, 0, 0, 0.3);
+    border-radius: 8px;
+    top: 0;
+    padding: 20px;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    padding-top: 16px;
+    margin-top: -50px;
+}
+
+.heroSection .left h1 {
+    color: #FFFFFF;
+    font-family: 'Raleway' sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    width: 457px;
+    margin-bottom: 0;
+}
+
+.heroSection .left p {
+    color: #FFFFFF;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.heroSection .right img {
+    width: 400px;
+    height: 500px;
+    margin-right: -230px;
+    margin-top: 150px;
+}
+
+/* Cards */
+
+.cards {
+    position: relative;
+}
+
+.cards .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #BF471B 0%, #402D22 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
+.cards .content {
+    background-color: #BF471B;
+    border-radius: 24px;
+    padding: 8px 10px;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.cards h3 {
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-top: 8px;
+    text-align: center;
+    align-self: center;
+}
+
+.cards p {
+    font-family: 'poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+.cards .cardsContentOne {
+    position: absolute;
+    left: -300px;
+    top: 290px;
+    line-height: 10px;
+    width: 100px;
+}
+
+.cards .cardsContentTow {
+    position: absolute;
+    left: -460px;
+    top: -80px;
+    line-height: 10px;
+    width: 140px;
+}
+
+.cardsContentTow h3 {
+    margin-top: 10px;
+}
+
+.cardsContentTow .star {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.cardsContentTow img {
+    width: 30px;
+    margin-top: -13px;
+}
+
+/* Member Section */
+
+section {
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: #402D22;
+    margin: 0;
+}
+
+section p {
+    color: #402D22;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.memberSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+
+.memberSection .memberCards {
+    width: 442px;
+    background: #F2C894;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.memberSection .memberCards .content {
+    font-family: 'Raleway' sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #402D22;
+    padding: 24px 32px;
+    border-radius: 24px;
+    background-color: #5581D9;
+}
+
+
+.memberSection .memberCards .info h4 {
+    font-family: 'Raleway' sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #402D22;
+    margin: 0;
+}
+
+.memberSection .memberCards .info {
+    padding: 24px 32px;
+}
+
+.memberSection .memberCards img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 32px;
+    bottom: 20px;
+}
+
+.memberSection .features {
+    margin-bottom: 30px;
+}
+
+/* Menu Section */
+
+.menuSection {
+    background: linear-gradient(180deg, #F2C894 0%, #F2A74B 100%);
+    padding: 70px 0;
+    margin-bottom: -80px;
+}
+
+.menuSection h2 {
+    text-align: center;
+    margin: 90px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 65px;
+}
+
+.menuSection .menus {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+
+.menuSection .menus .drinks img {
+    width: 400px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menuSection .menus .drinks {
+    background-color: #402D22;
+    border-radius: 24px;
+    padding: 0px 32px;
+}
+
+
+.menuSection .menus .foods img {
+    width: 400px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menuSection .menus .foods {
+    background-color: #402D22;
+    border-radius: 24px;
+    padding: 0px 32px;
+}
+
+.foods .info {
+    margin: 40px;
+}
+
+.drinks .info {
+    margin: 40px;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+
+.liecence {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+

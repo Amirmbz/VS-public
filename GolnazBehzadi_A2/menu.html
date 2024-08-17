@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Menu Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+      400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
+      900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+      400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,100..900;1,
+      100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4334a54402.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style/styleMenu.CSS" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <div class="logo">Restaurant.</div>
+          <button class="navIcon" onclick="toggleMenu()" id="navIcon">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul id="navList">
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="reserve.html" class="btn dark reserve-now">Reserve Now</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- End of desktop navigation -->
+
+    <div class="wrapper">
+      <h1>Menu</h1>
+      <table>
+        <tr>
+          <th>
+            <div class="pic">
+              <img src="img/New folder/3.jpg" alt="food pic" />
+            </div>
+            <h2>Food</h1>
+          </th>
+          <th>
+            <div class="pic">
+              <img src="img/New folder/9.jpg" alt="drink pic" />
+            </div>
+            <h2>Drink</h1>
+          </th>
+        </tr>
+        <tr>
+          <td>Margherita Pizza</td>
+          <td>Classic Mojito</td>
+        </tr>
+        <tr>
+          <td>Beef Tacos</td>
+          <td>Berry Smoothie</td>
+        </tr>
+        <tr>
+          <td>Buddha Bowl</td>
+          <td>Matcha Latte</td>
+        </tr>
+        <tr>
+          <td>Chicken Parmesan</td>
+          <td>Mango Margarita</td>
+        </tr>
+        <tr>
+          <td>Grilled Salmon</td>
+          <td>Lavender Lemonade</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <div class="liecence">
+        <p class="coppyright">Golnaz Behzadi @ 2024</p>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

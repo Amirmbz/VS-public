@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reservation Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+      400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
+      900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+      400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,100..900;1,
+      100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4334a54402.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style/styleReserve.CSS" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <div class="logo">Restaurant.</div>
+          <button class="navIcon" onclick="toggleMenu()" id="navIcon">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul id="navList">
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="reserve.html" class="btn dark reserve-now"
+                >Reserve Now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- End of desktop navigation -->
+
+    <div class="wrapper">
+      <section class="resvation">
+        <div class="img">
+          <img src="img/New folder/10.jpg" alt="Restaurant pic" />
+        </div>
+        <div class="form">
+          <h1>Reserve Now</h1>
+          <form>
+            <div class="form-row">
+              <select name="days" id="days">
+                <option value="day-select">Select Day</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+              <select name="hours" id="hours">
+                <option value="hours-select">Select Hour</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Full Name" required />
+              <input type="text" placeholder="Phone Number" required />
+            </div>
+            <div class="form-row">
+              <input type="number" placeholder="How Many Person?" min="1" required />
+              <input class="submit" type="submit" value="Reserve" required/>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="liecence">
+        <p class="coppyright">Golnaz Behzadi @ 2024</p>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

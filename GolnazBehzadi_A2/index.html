@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+      400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
+      900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+      400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,100..900;1,
+      100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4334a54402.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style/style.CSS"/>
+    <link rel="stylesheet" href="style/responsive.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <div class="logo">Restaurant.</div>
+          <button class="navIcon" onclick="toggleMenu()" id="navIcon">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul id="navList">
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="reserve.html" class="btn dark reserve-now">Reserve Now</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- End of desktop navigation -->
+
+        <div class="heroSection">
+          <div class="left">
+            <h1>Let's Make Memmory Here</h1>
+            <p>
+              Here, we believe that dining is not just about eating. It's about
+              savoring the moment, cherishing the flavors, and creating memories
+              with every bite. Our passion for exceptional cuisine and
+              impeccable service is what sets us apart.
+            </p>
+            <a href="#about" class="btn light">More About Us</a>
+          </div>
+          <div class="right">
+            <img src="img/New folder/8.jpg" alt="foodPic" />
+          </div>
+          <div class="cards">
+            <div class="cardsContentOne">
+              <div class="content">
+                <div>
+                  <h3>Best</h3>
+                </div>
+                <p>Culinary</p>
+              </div>
+              <div class="bg"></div>
+            </div>
+
+            <div class="cardsContentTow">
+              <div class="content">
+                <div class="star">
+                  <h3>5</h3>
+                  <img src="img/star.svg" alt="star Icon" />
+                </div>
+                <p>Overall Rating</p>
+              </div>
+              <div class="bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End of the header section -->
+    <div class="wrapper">
+      <section class="memberSection">
+        <div class="left">
+          <div class="memberCards">
+            <div class="content">Owner</div>
+
+            <div class="info">
+              <h4>Name</h4>
+            </div>
+            <img src="img/profileWomen.png" alt="owner pic" />
+          </div>
+
+          <div class="memberCards">
+            <div class="content">Chef</div>
+
+            <div class="info">
+              <h4>Name</h4>
+            </div>
+            <img src="img/profileMen.png" alt="chef pic" />
+          </div>
+        </div>
+
+        <div class="right">
+          <h2>Why We Are Unique</h2>
+          <div class="features">
+            <p>
+              We pride ourselves on creating a dining experience that is truly
+              unparalleled.
+            </p>
+          </div>
+          <a href="#" class="btn light desktop">More</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- End of member section -->
+
+    <section class="menuSection">
+      <div class="wrapper">
+        <h2>Our Menu</h2>
+
+        <div class="menus">
+          <div class="drinks">
+            <img src="img/New folder/7.jpg" alt="drinks pic" />
+            <div class="info">
+              <a href="menu.html">Drink Menu</a>
+            </div>
+          </div>
+
+          <div class="foods">
+            <img src="img/New folder/1.jpg" alt="drinks pic" />
+            <div class="info">
+              <a href="menu.html">Food Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of menu section -->
+
+    <footer>
+      <div class="liecence">
+        <p class="coppyright">Golnaz Behzadi @ 2024</p>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>
