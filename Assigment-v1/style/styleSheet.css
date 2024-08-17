@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 5px;
+}
+
+.logo {
+    width: 6%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.profileIcon {
+    width: 30px;
+}
+
+.profileButton {
+    background-color: #fcd74f;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 0.3px solid #000000;
+}
+
+
+.mainSection {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.sideNav {
+    position: sticky;
+    padding-top: 50px;
+}
+
+.sideNavList {
+    list-style: none;
+    display: grid;
+    gap: 60px;
+    width: 90px;
+}
+
+
+.sideNavItem {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    border: 2px;
+
+}
+
+
+
+.mainImg {
+    width: 500px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.mainImg2 {
+    width: 500px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+
+.content {
+    display: grid;
+    margin-right: 20px;
+}
+
+
+.headings {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.text {
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+
+.subButton {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: #fcd74f;
+    border: none;
+}
+
+
+.moreButton {
+    font-size: 15px;
+    border: none;
+    background-color: #bfcec1;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.footer {
+    margin-bottom: 0px;
+    margin-left: 20px;
+}

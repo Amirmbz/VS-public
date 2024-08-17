@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Golnaz Behzadi" />
+    <meta
+      name="description"
+      content="Assignment 1: Introduction to JavaScript"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+
+    <link href="style/styleSheet.css" rel="styleSheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!--Logo-->
+      <img class="logo" src="img/logo.png" alt="img of logo" id="logo" />
+
+      <span class="profile">
+        <img
+          class="profileIcon"
+          src="img/profile-icon.png"
+          alt="profile-icon"
+        />
+        <button class="profileButton">
+          <a href="#">Sign Up</a>
+        </button>
+      </span>
+    </header>
+
+    <section class="mainSection">
+      <!--Side Nav-->
+      <aside class="sideNav">
+        <ul class="sideNavList">
+          <a class="sideNavItem" href="#" id="sideNavItem">
+            <li>Home</li>
+          </a>
+          <a class="sideNavItem" href="#" id="sideNavItem">
+            <li>About</li>
+          </a>
+          <a class="sideNavItem" href="#" id="sideNavItem">
+            <li>Contact Us</li>
+          </a>
+          <a class="sideNavItem" href="#" id="sideNavItem">
+            <li>Support</li>
+          </a>
+        </ul>
+      </aside>
+
+      <img class="mainImg" id="image" src="img/main-img.png" />
+
+      <div class="content">
+        <h1 class="headings">Summer Semester</h1>
+        <h2 class="text">
+          The summer semester offers a unique opportunity for students to
+          accelerate their academic progress, catch up on missed courses, or
+          explore new areas of interest. Unlike the traditional fall and spring
+          semesters, the summer term is typically shorter, often spanning just
+          eight to twelve weeks. This condensed schedule allows students to
+          complete a full course load in a fraction of the time, making it an
+          ideal choice for those looking to graduate early or lighten their
+          regular semester workload.
+        </h2>
+
+        <button class="subButton" id="subButton">
+          <a href="#">Subscribe</a>
+        </button>
+        <button class="moreButton" id="transform">Learn More</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copf;Creative Coding - WDGD - 150 | 2024</p>
+    </footer>
+
+    <script>
+      // Text
+      function transform() {
+        let learnMore = document.querySelector("h2");
+        learnMore.innerHTML =
+          "During the summer semester, students can also benefit from smaller class sizes and more personalized attention from instructors, fostering a conducive learning environment. Additionally, many universities offer a variety of intensive courses, workshops, and internships exclusively during the summer months, providing students with unique opportunities for hands-on experience and skill development. Moreover, the flexibility of summer courses often allows students to balance their academic pursuits with other commitments such as internships, jobs, or travel experiences, further enriching their overall educational experience.";
+        learnMore.style.background = "#fcd74f";
+        learnMore.style.padding = "10px";
+
+        let button = querySelector("button");
+      }
+
+      let button = document.querySelector("#transform");
+      button.addEventListener("click", transform);
+
+      // Button's Color
+      button.addEventListener("mouseenter", function () {
+        button.style.background = "lightBlue";
+      });
+
+      button.addEventListener("mouseleave", function () {
+        button.style.background = "#bfcec1";
+      });
+
+      let subButton = document.querySelector("#subButton");
+      subButton.addEventListener("mouseenter", function () {
+        subButton.style.background = "lightBlue";
+      });
+
+      subButton.addEventListener("mouseleave", function () {
+        subButton.style.background = "#fcd74f";
+      });
+
+      // Image
+      let image = document.querySelector("#image");
+      function changeImage() {
+        image.src = "img/second-img.png";
+      }
+      image.addEventListener("mouseover", changeImage);
+
+      function restoreImage() {
+        image.src = "img/main-img.png";
+      }
+      image.addEventListener("mouseout", restoreImage);
+
+      let logo = document.querySelector("#logo");
+      logo.addEventListener("mouseover", function () {
+        logo.style.transform = "rotate(360deg)";
+        logo.style.transition = "transform 500ms";
+      });
+      
+      logo.addEventListener("transitionend", function () {
+        logo.style.transition = "";
+        logo.style.transform = "rotate(0deg)";
+      });
+
+      let sideNavItems = document.querySelectorAll(".sideNavItem");
+
+      sideNavItems.forEach(function (sideNav) {
+        sideNav.addEventListener("mouseover", function () {
+          sideNav.style.color = "#fcd74f";
+        });
+        sideNav.addEventListener("mouseout", function () {
+          sideNav.style.color = "black";
+        });
+      });
+    </script>
+  </body>
+</html>
