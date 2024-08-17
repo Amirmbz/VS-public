@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Shares</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Total Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if transactions %}
+                    {% for transaction in transactions %}
+                        <tr>
+                            <td>{{ transaction.product_name }}</td>
+                            <td>{{ transaction.shares }}</td>
+                            <td>{{ transaction.price }}</td>
+                            <td>{{ transaction.total }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td>No Transaction History</td>
+                        <td>No Transaction History</td>
+                        <td>No Transaction History</td>
+                        <td>No Transaction History</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Wallet</th>
+                    <th scope="col">Total Shares</th>
+                    <th scope="col">Equity</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if totals %}
+                    {% for total in totals %}
+                        <tr>
+                            <td>{{ total.cash }}</td>
+                            <td>{{ total.shares }}</td>
+                            <td>{{ total.total }}</td>
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
