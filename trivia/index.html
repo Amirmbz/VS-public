@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="images.png" rel="icon">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                document.getElementById('correctbut').addEventListener('click', function() {
+                    document.getElementById("correct").style.backgroundColor = "lightgreen";
+                    document.getElementById("correct").innerHTML = 'Correct!';
+                    document.getElementById("correct").style.textAlign = 'center';
+                });
+                let incorrects = document.querySelectorAll('#incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        document.getElementById("correct").style.backgroundColor = "#fa5959";
+                        document.getElementById("correct").innerHTML = 'Incorrect';
+                        document.getElementById("correct").style.textAlign = 'center';
+                        document.getElementById('part3').style.display = 'none';
+                    });
+                };
+                document.querySelector('#check').addEventListener('click', function() {
+                    //let input = document.querySelector('input');
+                    if (document.querySelector('input').value === 'Yes') {
+                        document.getElementById("ans").style.backgroundColor = "lightgreen";
+                        document.getElementById("ans").innerHTML = 'Correct!';
+                        document.getElementById("ans").style.textAlign = 'center';
+                    
+                    }
+                    else {
+                        document.getElementById("ans").style.backgroundColor = "#fa5959";
+                        document.getElementById("ans").innerHTML = 'Incorrect';
+                        document.getElementById("ans").style.textAlign = 'center';
+                        document.getElementById('part3').style.display = 'none';
+                    }
+                });
+                document.body.addEventListener('click', function() {
+                    if ((document.getElementById('ans').textContent === 'Correct!') && 
+                    document.getElementById('correct').textContent === 'Correct!') {
+                        document.getElementById('part3').style.display = 'block';
+                    }
+                });
+                document.getElementById('lastbutton').addEventListener('click', function() {
+                    document.getElementById('lastp').style.display = 'block';
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What's with the attitude baby boy?</h3>
+                <div class = 'divider'>
+                    <div class = 'divis'><button title = 'is that IT?' class = 'button' id = 'incorrect'>I'm just really tired</button></div>
+                    <div class = 'divis'><button title = 'is that IT?' class = 'button' id = 'correctbut'>I can't understand CS50</button></div>
+                    <div class = 'divis'><button title = 'is that IT?' class = 'button' id = 'incorrect'>Been through a breakup</button></div>
+                    <div class = 'divis'><button title = 'is that IT?' class = 'button' id = 'incorrect'>My ship sank in the sink</button></div>
+                    <div class = 'divis'><button title = 'is that IT?' class = 'button' id = 'incorrect'>This is my default behavior</button></div>
+                </div>
+                <div id = 'correct'></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Can you be a doll and fix your attitude?</h3>
+                <input type = 'text' placeholder = 'Can you?!!!!!'></input>
+                <button class = 'button' id = 'check'>Please check my answer MASTER</button>
+                <p id = 'ans'></p>
+            </div>
+
+            <div class="section" id = 'part3' style="display: none;">
+                <h2>Part 3: One Option Response</h2>
+                <hr>
+                <h3>So are you gonna study more?</h3>
+                <button class = 'button' id = 'lastbutton'>Sar, yes sir</button>
+                <p class="lastp" id = lastp >Good Boy!</p>
+            </div>
+
+            <div>
+                <h2>End of the Questionnaire</h2>
+                <hr>
+            </div>
+        </div>
+    </body>
+</html>

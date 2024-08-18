@@ -1,0 +1,13 @@
+h1{
+
+    margin-left: 100px;
+}
+.divider{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.divis{
+    text-align: left;
+    mergin-left: 3rem;
+}
